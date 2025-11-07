@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "ReactInternAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Signup",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"name\":\"Test\",\"email\":\"a@b.com\",\"password\":\"123456\" }"
+        },
+        "url": {
+          "raw": "{{base}}/api/auth/signup"
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{ \"email\":\"a@b.com\",\"password\":\"123456\" }"
+        },
+        "url": {
+          "raw": "{{base}}/api/auth/login"
+        }
+      }
+    }
+  ]
+}
